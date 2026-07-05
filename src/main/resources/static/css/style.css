@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #222;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 18px;
+    background-color: #3f80ea;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #326bc4;
+}
+
+.status-msg {
+    text-align: center;
+    color: #c0392b;
+    min-height: 18px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+}
+
+.current-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.current-main img {
+    width: 60px;
+    height: 60px;
+}
+
+.temp {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.description {
+    text-transform: capitalize;
+    color: #555;
+    margin-top: 0;
+}
+
+.details-table {
+    width: 100%;
+    margin-top: 12px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.details-table td {
+    padding: 6px 4px;
+    border-top: 1px solid #eee;
+}
+
+.details-table td:first-child {
+    color: #666;
+}
+
+.details-table td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+#forecastSection h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.forecast-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.forecast-day {
+    flex: 1;
+    min-width: 90px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.forecast-day img {
+    width: 40px;
+    height: 40px;
+}
+
+.forecast-day .fd-date {
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.forecast-day .fd-temps {
+    margin: 5px 0 2px;
+}
+
+.forecast-day .fd-humidity {
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .forecast-row {
+        flex-wrap: wrap;
+    }
+    .forecast-day {
+        min-width: 45%;
+    }
+}

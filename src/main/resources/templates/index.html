@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Weather App</h1>
+        <p class="subtitle">Search a city to see the current weather and 5-day forecast</p>
+
+        <form id="searchForm" autocomplete="off">
+            <input id="cityInput" type="text" placeholder="Enter city name" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="statusMsg" class="status-msg"></p>
+
+        <div id="currentCard" class="card hidden">
+            <h2 id="placeName"></h2>
+            <div class="current-main">
+                <img id="iconImg" src="" alt="weather icon">
+                <p class="temp"><span id="tempVal"></span>&deg;C</p>
+            </div>
+            <p id="descVal" class="description"></p>
+            <table class="details-table">
+                <tr>
+                    <td>Feels like</td>
+                    <td id="feelsVal"></td>
+                </tr>
+                <tr>
+                    <td>Humidity</td>
+                    <td id="humidityVal"></td>
+                </tr>
+                <tr>
+                    <td>Wind speed</td>
+                    <td id="windVal"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="forecastSection" class="hidden">
+            <h3>5-Day Forecast</h3>
+            <div id="forecastRow" class="forecast-row"></div>
+        </div>
+
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
